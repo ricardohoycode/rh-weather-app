@@ -1,0 +1,139 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 65.5%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0 2rem;
+    font-size: 2.2rem;
+    background-color: #F46036;
+}
+
+#root {
+    padding: 2rem 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+
+.App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://home.openweathermap.org/assets/history_banner-6fb0d5dc29d608ac8bc0717480e210a40260e475f6fb86880ef4687d496eb376.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 20px 20px 20px rgba(255, 0, 0, 0.5);
+}
+
+.weatherApp {
+    background-color: rgba(25, 255, 255, 0.2);
+    border: 5px solid rgba(30, 255, 255, .1);
+    border-radius: 10px;
+    width: 40rem;
+    padding: 1rem 2rem 2rem 2rem;
+    margin: 0 auto;
+}
+
+.weatherApp h1 {
+    font-size: 2.5rem;
+    margin: .5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #eee;
+    border: 2px solid white;
+    border-radius: 5px;
+    border-bottom: 2px solid #f44d56;
+}
+
+.weatherCard-body ul {
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.weatherCard-body ul li {
+    font-family: 'Roboto';
+    font-weight: 600;
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0;
+    text-align: left;
+}
+
+.weather-button {
+    font-family: 'Nerko One', cursive;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.weather-button:hover {
+    background-color: #F46036;
+    color: #eee;
+    border-left: 2px solid #222;
+    border-top: 2px solid #222;
+}
+
+.img-animation {
+    animation: 8s infinite flotar;
+}
+
+.img-animation {
+    filter: drop-shadow(0 2px 10px rgba(229, 190, 1, 0.5));
+}
+
+
+
+
+@keyframes flotar {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(0, -5px);
+    }
+
+    75% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+/* Responsive */
+
+@media (min-width: 410px) {
+    .temperature {
+        font-size: 8rem;
+    }
+
+    .principal,
+    .searcher,
+    .moreInformation {
+        min-height: 550px;
+    }
+
+    .searcher__results {
+        max-height: 380px;
+    }
+}
